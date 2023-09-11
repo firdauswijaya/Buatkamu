@@ -33,7 +33,7 @@ function play() {//Link Audio Bisa Diganti
 var audio = new Audio('https://i.top4top.io/m_28102zgnq1.mp3');audio.play();audio.loop=true;audio.addEventListener('ended', function() {this.currentTime = 0;this.play();}, false);}         
 
 //Pesan WhatsApp
- function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=" + window.nama + " udah liat semuanya. xixii :v" + "%0A%0A" + "by us ><";} 
+ function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=" + window.nama + " udah liat semuanya...." + "%0A%0A" + "by us ><";} 
 </script>
  
 <script type="text/javascript">            
@@ -98,7 +98,7 @@ StopMarquee();
 async function pilihwarna(){
   var { isConfirmed: warna } = await swals.fire({
   title: 'Oh iyaw, ' + nama + ' coba pilih warna yang di sukai?',
-  text: 'rules, harus dijalani :v',
+  text: 'rules, harus dijalani',
   showCancelButton: true,
   confirmButtonText: 'Biru',
   cancelButtonText: 'Merah',
@@ -128,7 +128,7 @@ if(warna2){
     cancelButtonText: 'Yakin',
 });
 if(warna2){    
-    await swals.fire('Oke, memilih Biru!', 'Sama aja sebenarnya, cuma kalo Merah telat tugas ada hukumanya &#129315;');
+    await swals.fire('Oke, memilih Biru!', 'Sama aja sebenarnya, cuma kalo Biru telat tugas ada hukumanya &#129315;');
     expl();StartMarquee();
   } else {
     await swals.fire('Oke!', `Sekarang lihat ini ya &#10084;&#65039;`);
