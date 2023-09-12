@@ -104,7 +104,7 @@ async function pilihwarna(){
   cancelButtonText: 'Masih sedih',
 });
 if(warna){
-    await swals.fire('Yeayy!', '<b>Allhamdullilah, Baik</b> - berarti tetep semnagat yaa menjalani hari-hari &#128513;');
+    await swals.fire('Yeayy!', '<b>Allhamdullilah, Baik</b> - berarti tetep semangat yaa menjalani hari-hari &#128513;');
     var { isConfirmed: warna2 } = await swals.fire({
     title: nama + ' yakin, Allhamdullilah Baik ?', 
     text: 'Atau mau ganti? (masih sedih)', showCancelButton: true,
@@ -115,7 +115,7 @@ if(warna2){
     await swals.fire('Oke!', `Sekarang lihat ini ya &#10084;&#65039;`);
     expl();StartMarquee();
   } else {
-    await swals.fire('Oke, Masih sedih yaa', 'ingat.... sedih boleh tapi gaboleh berlarut-larut yaaa, Karna kamu juga berhak bahagia');
+    await swals.fire('Oke, Masih sedih yaa', 'ingat.... sedih boleh tapi gaboleh berlarut-larut yaaa, Karena kamu juga berhak bahagia');
     expl();StartMarquee();
 }
 //Selingan
