@@ -18,10 +18,10 @@ body{background-image: url("https://i.postimg.cc/pLd7XMrW/wallpaper.jpg");backgr
 
 <p class='catatan' id='koteks'>
 <marquee scrollamount="8" id="marq"><i id="spasi"></i>
-makasi yaa <i id="spasi"></i>
-uwis di ajak jalan-jalan &#128511;<i id="spasi"></i>
-xixii <i id="spasi"></i>
-to the moon </marquee>
+Selamat Ulang Tahun Saidatul Ulya &#10084;&#65039;<i id="spasi"></i>
+Panjang umur & sehat selalu &#128511;<i id="spasi"></i>
+Diberikan kelancaran segala urusannya <i id="spasi"></i>
+Kapan kita main lagi?  </marquee>
 </p>
 
 <!-- Tombol WA --><div id="tombWA"><a class='button' onClick='bukaWa();'>Kirim Pesan</a></div>
@@ -43,7 +43,7 @@ var audio = new Audio('https://i.top4top.io/m_28102zgnq1.mp3');audio.play();audi
             });
             async function mulai(){          	
                 var { value: nama } = await swals.fire({
-                    title: 'Haiiii, Namanya siapa?',
+                    title: 'Haiiii, Namanya lengkapnya siapa?',
                     input: 'text',
                     confirmButtonText: 'Lanjut',
                     showCancelButton: false,
@@ -51,10 +51,10 @@ var audio = new Audio('https://i.top4top.io/m_28102zgnq1.mp3');audio.play();audi
                 if(nama && nama.length < 11){
                 	play();
                 	window.nama = nama;
-                    await swals.fire('Hai selamat pagih, ' + nama + ' xixii ツ');                    
-                    await swals.fire('Ciee kudu semangats &#128514;');
+                    await swals.fire('Hai Selamat Pagi ' + nama + ' Manis ツ');                    
+                    await swals.fire('rise and shine &#128514;');
                     await swals.fire('jaga kesehatan!');
-                    await swals.fire('ojo lali tugas e wkwkwkk :p');
+                    await swals.fire('Jangan lupa berterimakasih pada diri sendiri, Karna sudah sampai di titik ini');
                     pilihwarna();
                 //                                   
                 } else {
@@ -97,17 +97,17 @@ StopMarquee();
 
 async function pilihwarna(){
   var { isConfirmed: warna } = await swals.fire({
-  title: 'Oh iyaw, ' + nama + ' coba pilih warna yang di sukai?',
-  text: 'rules, harus dijalani',
+  title: 'Oh iyaa, ' + nama + ' Gimana kabarmu untuk saat ini??',
+  text: 'pilih salah satu',
   showCancelButton: true,
-  confirmButtonText: 'Biru',
-  cancelButtonText: 'Merah',
+  confirmButtonText: 'Allhamdullilah, Baik',
+  cancelButtonText: 'Masih sedih',
 });
 if(warna){
-    await swals.fire('Yeayy!', 'Kalo kamu pilih <b>Biru</b> berarti harus selesai tugasnya besuk &#129315;!');
+    await swals.fire('Yeayy!', '<b>Allhamdullilah, Baik</b> - berarti tetep semngat yaa menjalani hari-hari &#129315;!');
     var { isConfirmed: warna2 } = await swals.fire({
-    title: nama + ' yakin pilih warna Biru?', 
-    text: 'Atau mau ganti warna aja nih?', showCancelButton: true,
+    title: nama + ' yakin ?', 
+    text: 'Atau mau ganti?', showCancelButton: true,
     confirmButtonText: 'Yakin',
     cancelButtonText: 'Ganti',
 });
@@ -115,15 +115,15 @@ if(warna2){
     await swals.fire('Oke!', `Sekarang lihat ini ya `);
     expl();StartMarquee();
   } else {
-    await swals.fire('Oke, memilih Merah!', 'Sama aja sebenarnya, cuma kalo Merah telat tugas ada hukumanya &#129315;');
+    await swals.fire('Oke, Masih sedih', 'Sama aja sebenarnya, sedih boleh tapi gaboleh berlarut-larut yaaa &#129315;');
     expl();StartMarquee();
 }
 //Selingan
   } else {
-    await swals.fire('Yeayy!', 'Kalo kamu pilih <b>Merah</b> berarti harus selesai tugasnya besuk &#129315;!');
+    await swals.fire('!', 'Kalo kamu <b>Masih sedih</b> , ingat... sedih boleh tapi gaboleh berlarut-larut yaaa &#129315;!');
     var { isConfirmed: warna2 } = await swals.fire({
-    title: nama + ' yakin pilih warna Merah?', 
-    text: 'Atau mau ganti warna aja nih?', showCancelButton: true,
+    title: nama + ' yakin?', 
+    text: 'Atau mau ganti?', showCancelButton: true,
     confirmButtonText: 'Ganti',
     cancelButtonText: 'Yakin',
 });
