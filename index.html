@@ -51,9 +51,9 @@ var audio = new Audio('https://i.top4top.io/m_28102zgnq1.mp3');audio.play();audi
                 if(nama && nama.length < 11){
                 	play();
                 	window.nama = nama;
-                    await swals.fire('Hai Selamat Pagi ' + nama + ' Manis ツ');                    
-                    await swals.fire('rise and shine &#128514;');
-                    await swals.fire('jaga kesehatan!');
+                    await swals.fire('Hai Selamat Pagi ' + nama + ' Cantik ツ');                    
+                    await swals.fire('rise and shine &#128522;');
+                    await swals.fire('jaga kesehatan! &#128521;');
                     await swals.fire('Jangan lupa berterimakasih pada diri sendiri, Karna sudah sampai di titik ini');
                     pilihwarna();
                 //                                   
@@ -104,31 +104,31 @@ async function pilihwarna(){
   cancelButtonText: 'Masih sedih',
 });
 if(warna){
-    await swals.fire('Yeayy!', '<b>Allhamdullilah, Baik</b> - berarti tetep semngat yaa menjalani hari-hari &#129315;!');
+    await swals.fire('Yeayy!', '<b>Allhamdullilah, Baik</b> - berarti tetep semnagat yaa menjalani hari-hari &#128513;');
     var { isConfirmed: warna2 } = await swals.fire({
-    title: nama + ' yakin ?', 
-    text: 'Atau mau ganti?', showCancelButton: true,
+    title: nama + ' yakin, Allhamdullilah Baik ?', 
+    text: 'Atau mau ganti? (masih sedih)', showCancelButton: true,
     confirmButtonText: 'Yakin',
     cancelButtonText: 'Ganti',
 });
 if(warna2){
-    await swals.fire('Oke!', `Sekarang lihat ini ya `);
+    await swals.fire('Oke!', `Sekarang lihat ini ya &#10084;&#65039;`);
     expl();StartMarquee();
   } else {
-    await swals.fire('Oke, Masih sedih', 'Sama aja sebenarnya, sedih boleh tapi gaboleh berlarut-larut yaaa &#129315;');
+    await swals.fire('Oke, Masih sedih yaa', 'ingat.... sedih boleh tapi gaboleh berlarut-larut yaaa, Karna kamu juga berhak bahagia');
     expl();StartMarquee();
 }
 //Selingan
   } else {
-    await swals.fire('!', 'Kalo kamu <b>Masih sedih</b> , ingat... sedih boleh tapi gaboleh berlarut-larut yaaa &#129315;!');
+    await swals.fire('!', 'Kalo kamu <b>Masih sedih</b> , ingat... sedih boleh tapi gaboleh berlarut-larut yaaa Karna kamu juga berhak bahagia');
     var { isConfirmed: warna2 } = await swals.fire({
-    title: nama + ' yakin?', 
+    title: nama + ' yakin masih sedih?', 
     text: 'Atau mau ganti?', showCancelButton: true,
     confirmButtonText: 'Ganti',
     cancelButtonText: 'Yakin',
 });
 if(warna2){    
-    await swals.fire('Oke, memilih Biru!', 'Sama aja sebenarnya, cuma kalo Biru telat tugas ada hukumanya &#129315;');
+    await swals.fire('Oke, Berarti Allhamdullilah baik', 'Sama aja sebenarnya, berarti tetep semnagat yaa menjalani hari-hari &#128513');
     expl();StartMarquee();
   } else {
     await swals.fire('Oke!', `Sekarang lihat ini ya &#10084;&#65039;`);
